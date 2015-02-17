@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<!-- 1. load platform support before any code that touches the DOM. -->
+
+	<script src="bower_components/webcomponentsjs/webcomponents.min.js"> 
+	</script>
+	<link rel="import" href="elements/hello-world.html">
+	<link rel="import" href="bower_components/core-header-panel/core-header-panel.html">
+	<link rel="import" href="bower_components/core-toolbar/core-toolbar.html">
+	<link rel="import" href="bower_components/core-icons/core-icons.html">
+	<link rel="import" href="bower_components/core-icons/social-icons.html">
+	<link rel="import" href="bower_components/paper-elements/paper-elements.html">
+	<style type="text/css">
+	hello-world::shadow h1 {
+		color: #333;
+		text-align: center;
+	}
+	core-toolbar {
+		background: #333;
+		color: #FFF;
+
+	}
+	core-icon[icon="polymer"]{
+		color: blue;
+		height: 50px;
+		width: 50px;
+	}
+
+	paper-button {
+		background: #3f51b5;
+		color: white;
+	}
+	paper-button::shadow #ripple {
+		color: purple;
+	}
+	paper-tab {
+		background: #3f51b5;
+		color: white;
+	}
+	paper-tabs::shadow #ink {
+		color: #536dfe;
+	}
+	paper-tabs::shadow #selectionBar {
+		color: #536dfe;
+	}
+	.ripple{
+		width: 200px;
+		height: 200px;
+		border: solid 1px #333;
+		position: relative;
+	}
+
+	</style>
+	</head>
+	<body fullbleed layout vertical>
+	
+	<core-header-panel flex>
+		<core-toolbar>
+			<div>Hey!<br>Welcome!</div>
+		</core-toolbar>
+		<div class="ripple">
+			<paper-ripple fit></paper-ripple>
+			<h4>You can experience the ripple effect by clicking anywhere within this Square box</h4>
+		</div>
+		<p>Below is the checkbox along with a raised button <core-icon icon="arrow-drop-down"></core-icon> </p>
+		
+		<paper-checkbox></paper-checkbox>
+		<paper-button raised>This is a raised button</paper-button>
+		<br>
+		<br>
+		<br>
+
+		<paper-tabs selected="0">
+			<paper-tab>Tab 1</paper-tab>
+			<paper-tab>Tab 2</paper-tab>
+			<paper-tab>Tab 3</paper-tab>
+		</paper-tabs>
+		<paper-shadow z="5">
+			<h1>This is a paper shadow</h1>  
+		</paper-shadow>
+	</core-header-panel>
+	</body>
+</html>

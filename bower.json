@@ -1,0 +1,21 @@
+{
+  "name": "polymer",
+  "version": "0.0.0",
+  "authors": [
+    "Sujay <sujayvittal@gmail.com>"
+  ],
+  "description": "First setup",
+  "main": "index.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#~0.5.4",
+    "core-elements": "Polymer/core-elements#~0.5.4"
+  }
+}
